@@ -1,0 +1,26 @@
+Maven repositories 1.local
+					2.central
+					3.remote
+maven life cycles: Clean
+						preclean    clean     post clean
+					build
+						validate initialise Generate-Sources Process-Sources Generate-Resources Process Resources Compile 
+						Process-classes generate-testsources test compile Process test-classes test Prepare-Package 
+						Package Pre-integration-test Integration-test Post-Integration-Test Verify Install Deploy 
+					site
+						Pre-Site Site Post-Site Site-Deploy
+						
+Maven Command has Life cycle Phases Goals Plugins And Arguments.
+Plugins 
+	clean Compiler Surefire Jar	War 	JavaDoc 	Antrun
+	
+Goals 
+		Clean Package 
+	
+maven project creating format:  mvn archetype:generate
+-DgroupId = com.companyname.bank 
+-DartifactId = consumerBanking 
+-DarchetypeArtifactId = maven-archetype-quickstart 
+-DinteractiveMode = false
+	
+	
